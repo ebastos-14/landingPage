@@ -1,0 +1,5 @@
+- Revisar el video
+- Seguir el tutorial
+- Editar informacion y recursos
+- // Identificar la sintaxis de las clases
+- / Probar la edicion de contenedores y valores de las clases
