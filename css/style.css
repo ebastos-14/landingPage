@@ -10,14 +10,18 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: #797979;
+    background-color: #000000;
 }
 
 /* Nav bar */
-nav{
+nav {
+    overflow: hidden;
+    position: sticky;
+    color: #ffffff;
+    top: 0;
     width: 100%;
     height: 10vh;
-    background-color: #cccccc6e;
+    background-color: #3636368c;
     margin-bottom: 10px;
 }
 
@@ -32,9 +36,15 @@ nav{
 /* Nav icon shadow */
 .container .logo img{
     margin-left: 10px;
+    width: 50px;
+    filter: drop-shadow(2px 2px 2px #f5f5f5);
+}
+
+.coin{
     margin-top: 10px;
-    width: 70px;
-    filter: drop-shadow(2px 2px 2px #807777);
+    margin-right: 10px;
+    width: 25px;
+    filter: drop-shadow(0 0 1px #7c7c7c);
 }
 
 /* Nav link text color */
@@ -44,7 +54,7 @@ nav{
     cursor: pointer;    
     position: relative;
     margin: 0 20px;
-    transition: 0.5s linear   ;
+    transition: 0.5s linear;
 }
 
 /* Nav link bar color transition*/
@@ -53,23 +63,20 @@ nav{
     position: absolute;
     left: 0;
     bottom: -4px;
-    width: 0;   
-    background-color: #ff0000;
+    width: 0;
     height: 3.5px;
     transition: 0.5s linear;
 }
 
-/* Nav link text color transition */
-.links a:hover::before,
-.links a:hover{
-    color: rgb(255, 0, 0);
-    width: 100%;
-}
+/* Nav color link */
+.links .superball::before { background-color: #0000ff; } .links .superball:hover::before , .links .superball:hover{ color: #0000ff; width: 100%; }
+.links .ultraball::before{background-color: #000000; } .links .ultraball:hover::before , .links .ultraball:hover{ color: #000000; width: 100%; }
+.links .enteball::before{background-color: #ffff00; } .links .enteball:hover::before , .links .enteball:hover{ color: #ffff00; width: 100%; }
+.links .masterball::before{background-color: #800080; } .links .masterball:hover::before , .links .masterball:hover{ color: #800080; width: 100%; }
 
-
-/* Nav icon earch */
+/* Nav icon search */
 .container .search i{
-    color: rgb(255, 0, 0);
+    color: #ffffff;
     cursor: pointer;
     font-size: 1.3rem;
     margin-right: 20px;
@@ -91,7 +98,7 @@ section .content{
 
 /* Section main color */
 .content .main-content{
-    color: #ff0000;
+    color: #ededed;
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
@@ -101,17 +108,13 @@ section .content{
     font-size: clamp(2rem, 1rem + 5vw, 4rem);
 }
 
-.main-content h3{
-    font-size: clamp(2rem, 1rem + 5vw, 3rem);
-}
-
 .main-content h4{
     font-size: clamp(2rem, 1rem + 5vw, 1.5rem);
 }
 
 /* Section main color p */
 .main-content p{
-    color: #474747;
+    color: #909090;
     margin-top: 10px;
 }
 
@@ -128,7 +131,7 @@ section .content{
 }
 
 .order button{
-    min-width: 30%;
+    min-width: 15%;
     margin-left: 10px;
     border: none;
     outline: none;
@@ -137,7 +140,7 @@ section .content{
     color: #ffffff;
     font-weight: 700;
     padding: 0 2px;
-    font-size: clam p(0.6rem, 1rem 5vw, 3rem);
+    font-size: clamp(0.6rem, 1rem 5vw, 3rem);
     transition: 0.5s linear;
 }
 
@@ -149,6 +152,19 @@ section .content{
 .content .image img{
     max-width: 350px;
     width: 100%;
-    margin-right: 100px;
-    filter: drop-shadow(-10px -10px 200px #ffffff);
+    margin-right: 10vh;
+    margin-left: 10vh;
+    margin-top: 10vh;
+    filter: drop-shadow(0 0 100px #0022ff);
+}
+
+@media (max-width:800px){
+    .content{
+        display: flex;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .main-content{
+        margin: 0 10px;
+    }
 }
