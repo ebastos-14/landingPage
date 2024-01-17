@@ -8,3 +8,4 @@
 
 
 ### En la carpeta notas estan las 2 capturas de los commits, los sincronizados en el github y los registrados en la casa que no pude sincronizar
+# Se me olvido verificar credenciales y hice un commit con otra cuenta
