@@ -1,11 +1,2 @@
-- Revisar el video
-- Seguir el tutorial
-- Editar informacion y recursos
-- // Identificar la sintaxis de las clases
-- // Probar la edicion de contenedores y valores de las clases
-
-
-
-
 ### En la carpeta notas estan las 2 capturas de los commits, los sincronizados en el github y los registrados en la casa que no pude sincronizar
-# Se me olvido verificar credenciales y hice un commit con otra cuenta
+### Se me olvido verificar credenciales antes de hacer el pushh y hice un commit desde las credenciales de otro usuario pero hice el cambio de credenciales y volvi a hacer el commit, en la carpeta notas hay 2 imagenes, una muestra el comit hecho desde otras credenciales y la otra muestra el README agregado luego de editar las credenciales
